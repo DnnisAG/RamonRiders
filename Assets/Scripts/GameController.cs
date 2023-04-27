@@ -51,6 +51,7 @@ public class GameController : MonoBehaviour
     void OnCollectibleCollected()
     {
         textoScore.text = (++points).ToString();
+        textoGoal.text = (--neededPoints).ToString();
     }
 
     void OnObstacleHit()
@@ -70,7 +71,7 @@ public class GameController : MonoBehaviour
         {
             GameOver();
         }
-        if (points >= neededPoints)
+        if (points >= goal)
         {
             LevelWon();
         }
