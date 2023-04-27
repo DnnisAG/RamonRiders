@@ -27,7 +27,7 @@ public class CarController : MonoBehaviour
         currentSpeed = Mathf.Clamp(currentSpeed, 0.0f, speed);
 
         // Move the car left or right based on input
-        float horizontalInput = Input.GetAxis("Horizontal") * 2.0f;
+        float horizontalInput = Input.GetAxis("Horizontal") * 10.0f;
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime);
     }
 }
