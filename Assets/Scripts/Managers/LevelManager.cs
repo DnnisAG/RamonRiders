@@ -28,7 +28,7 @@ public class LevelManager : MonoBehaviour
     }
     public void LastScene()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
     }
 
     IEnumerator LoadLevel(int sceneIndex)

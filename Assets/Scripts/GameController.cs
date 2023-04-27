@@ -9,8 +9,8 @@ public class GameController : MonoBehaviour
     float timer = 120f;
     [SerializeField]
     int neededPoints = 60;
-    [SerializeField]
-    int startingLives = 3;
+
+    int goal;
 
     int points;
     public int lives;
@@ -26,10 +26,17 @@ public class GameController : MonoBehaviour
     TMP_Text textoGoal;
     void Awake()
     {
+        
+        SessionManager sessionManager = SessionManager.Instance;
+        points = sessionManager.GetScore();
+        lives = sessionManager.GetLives();
+        goal = sessionManager.GetScore() + neededPoints;
         currentTime = timer;
-        lives = startingLives;
         textoGoal.text = neededPoints.ToString();
+        textoScore.text = points.ToString();
+        textoLives.text = lives.ToString();
     }
+
 
     private void OnEnable()
     {
@@ -65,7 +72,7 @@ public class GameController : MonoBehaviour
         }
         if (points >= neededPoints)
         {
-            GameWon();
+            LevelWon();
         }
     }
 
@@ -78,9 +85,19 @@ public class GameController : MonoBehaviour
     public void LoseLife()
     {
         lives--;
+        SessionManager.Instance.LoseLives(1);
     }
 
-        public void GameOver()
+    public void GameOver()
+    {
+        SessionManager.Instance.AddScore(points);
+        SessionManager.Instance.ResetLives();
+        Destroy(gameObject);
+        LevelManager scene = FindObjectOfType<LevelManager>();
+        scene.LastScene();
+    }
+
+    public void LevelWon()
     {
         SessionManager.Instance.AddScore(points);
         Destroy(gameObject);
@@ -88,11 +105,4 @@ public class GameController : MonoBehaviour
         scene.NextScene();
     }
 
-    public void GameWon()
-    {
-        SessionManager.Instance.AddScore(points);
-        Destroy(gameObject);
-        LevelManager scene = FindObjectOfType<LevelManager>();
-        scene.LastScene();
-    }
 }

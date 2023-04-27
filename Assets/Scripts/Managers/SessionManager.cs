@@ -36,4 +36,20 @@ public class SessionManager : Singleton<SessionManager>
     {
         player.Score = 0;
     }
+
+
+    public int GetLives()
+    {
+        return player.Lives;
+    }
+
+    public void LoseLives(int value)
+    {
+        player.Lives -= value;
+    }
+
+    public void ResetLives()
+    {
+        player.Lives = 3;
+    }
 }

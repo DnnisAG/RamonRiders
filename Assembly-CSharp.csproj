@@ -61,6 +61,8 @@
     <Compile Include="Assets\Scripts\Utilities\Player.cs" />
     <Compile Include="Assets\Scripts\CarController.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\Roads &amp; Spawns\RoadController.cs" />
+    <Compile Include="Assets\Scripts\Roads &amp; Spawns\RoadSpawnController.cs" />
     <Compile Include="Assets\Scripts\GemController.cs" />
     <Compile Include="Assets\Scripts\Managers\WelcomeManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameOverController.cs" />
@@ -73,8 +75,6 @@
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\ObstacleController.cs" />
     <Compile Include="Assets\Scripts\Utilities\Singleton.cs" />
-    <Compile Include="Assets\Scripts\Roads &amp; Spawns\RoadController.cs" />
-    <Compile Include="Assets\Scripts\Roads &amp; Spawns\RoadSpawnController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
