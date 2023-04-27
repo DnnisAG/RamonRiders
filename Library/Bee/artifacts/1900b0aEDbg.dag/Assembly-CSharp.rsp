@@ -350,6 +350,7 @@
 "Assets/Scripts/FollowPlayer.cs"
 "Assets/Scripts/GameController.cs"
 "Assets/Scripts/GemController.cs"
+"Assets/Scripts/GoBack.cs"
 "Assets/Scripts/GoForward.cs"
 "Assets/Scripts/Managers/GameOverController.cs"
 "Assets/Scripts/Managers/LevelManager.cs"

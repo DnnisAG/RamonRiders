@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\GemController.cs" />
     <Compile Include="Assets\Scripts\Managers\WelcomeManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameOverController.cs" />
+    <Compile Include="Assets\Scripts\GoBack.cs" />
     <Compile Include="Assets\Scripts\SpawnManager.cs" />
     <Compile Include="Assets\Scripts\ObstaclesSpawner.cs" />
     <Compile Include="Assets\Scripts\TestCharacterController.cs" />
@@ -75,7 +76,6 @@
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\ObstacleController.cs" />
     <Compile Include="Assets\Scripts\Utilities\Singleton.cs" />
-    <Compile Include="Assets\Scripts\GoBack.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
