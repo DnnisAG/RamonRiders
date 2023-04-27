@@ -357,6 +357,8 @@
 "Assets/Scripts/Managers/WelcomeManager.cs"
 "Assets/Scripts/ObstacleController.cs"
 "Assets/Scripts/ObstaclesSpawner.cs"
+"Assets/Scripts/Roads & Spawns/RoadController.cs"
+"Assets/Scripts/Roads & Spawns/RoadSpawnController.cs"
 "Assets/Scripts/RoadSpawner.cs"
 "Assets/Scripts/SpawnManager.cs"
 "Assets/Scripts/TestCharacterController.cs"

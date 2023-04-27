@@ -22,11 +22,13 @@ public class GameController : MonoBehaviour
     TMP_Text textoTimer;
     [SerializeField]
     TMP_Text textoLives;
-
+    [SerializeField]
+    TMP_Text textoGoal;
     void Awake()
     {
         currentTime = timer;
         lives = startingLives;
+        textoGoal.text = neededPoints.ToString();
     }
 
     private void OnEnable()
