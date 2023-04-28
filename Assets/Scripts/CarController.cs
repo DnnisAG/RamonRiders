@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CarController : MonoBehaviour
 {
-    public float speed = 10.0f;
-    public float acceleration = 5.0f;
+    public float speed = 20.0f;
+    public float acceleration = 10.0f;
 
     private float currentSpeed = 0.0f;
     void Start()
